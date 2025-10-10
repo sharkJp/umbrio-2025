@@ -1073,7 +1073,7 @@ li a {
 
 .noah,
 .espanto,
-.simon,
+.simon2,
 .perro{
     width: 100% !important;
   height: 100%;
@@ -1081,6 +1081,7 @@ li a {
 .noah3d{
   top: 10%;
 }
+
 /* Texto aparece solo en la segunda imagen */
 .cards-secc3:hover .texto-secundario-secc3 {
   opacity: 1;
