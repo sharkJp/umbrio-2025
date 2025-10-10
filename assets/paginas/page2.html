@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!--favicon-->
+  <link rel="icon" type="image/png" href="../multimedia/img/fire.gif" />
+  <!--estilo-->
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pagina_2.css" />
+  <link rel="stylesheet" href="../css/responsi.css">
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <section id="secc4" class="seccion4">
+      <header>
+        <div class="contenedor">
+          <nav>
+            <!-- Botón del menú con animación de fuego -->
+            <div class="llama-menu">
+              <img src="../multimedia/img/fire.gif" alt="Menu Toggle" class="vela" />
+            </div>
+            <div class="menu">
+              <!-- Opciones para la navegación -->
+              <ul id="mainMenu" class="mainmenu hidden">
+                <img src="../multimedia/img/vela.webp" class="vela-menu" alt="Vela" />
+                <li><a href="../../index.html">Inicio</a></li>
+                <li>
+                  <a href="#" id="abrirModal" class="enlace-modal">Umbrío</a>
+                </li>
+                <li><a href="#secc5">Equipo</a></li>
+                <li><a href="#secc6">Making Off</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Resto del contenido -->
+      <div class="bloque-interprete">
+        <div class="interprete">
+          <video class="video-interprete" src="../multimedia/video/Inicio2.mp4" muted controls></video>
+          <button class="cerrar-boton">
+            <span class="close-icon">❌</span>
+          </button>
+        </div>
+
+        <button class="mostrar-boton">👁️ LSC</button>
+      </div>
+
+      <img src="../multimedia/img/mano.webp" id="cursor-img" alt="Mano" />
+
+      <div class="contenedor-principal">
+        <!-- Aquí puedes agregar el contenido principal de esta sección -->
+      </div>
+
+      <!-- Contenido del modal cortometraje umbrío -->
+      <dialog id="miModal">
+        <div class="contendor-btn">
+          <button id="cerrarModal">❌</button>
+        </div>
+        <div class="contenedor-video">
+          <video width="80%" autoplay muted controls>
+            <source src="../multimedia/video/umbrio_video.mp4" type="video/mp4" />
+            Tu navegador no soporta el tag de video.
+          </video>
+        </div>
+      </dialog>
+    </section>
+
+    <section id="secc5" class="seccion5">
+      <!-- Botón Persona intérprete -->
+      <div class="bloque-interprete">
+        <div class="interprete">
+          <video class="video-interprete" src="../multimedia/video/Equipo.mp4" muted controls></video>
+          <button class="cerrar-boton">
+            <span class="close-icon">❌</span>
+          </button>
+        </div>
+
+        <button class="mostrar-boton">👁️ LSC</button>
+      </div>
+
+      <h1 class="about-title">Equipo Umbrío</h1>
+
+      <div class="carousel-container">
+        <button class="nav-arrow left">&#10094;</button>
+        <div class="carousel-track">
+          <div class="card Ivonne" data-index="0">
+            <img src="" alt="Ivonne" />
+          </div>
+          <div class="card jhonge" data-index="1">
+            <img src="../multimedia/img/teams/jhonge16.png" alt="Jhonge" />
+          </div>
+          <div class="card" data-index="2">
+            <img src="" alt="Team Member 3" />
+          </div>
+          <div class="card" data-index="3">
+            <img src="" alt="Team Member 4" />
+          </div>
+          <div class="card" data-index="4">
+            <img src="" alt="Team Member 5" />
+          </div>
+          <div class="card" data-index="5">
+            <img src="" alt="Team Member 6" />
+          </div>
+          <div class="card" data-index="6">
+            <img src="" alt="Team Member 7" />
+          </div>
+          <div class="card" data-index="7">
+            <img src="" alt="Team Member 8" />
+          </div>
+          <div class="card" data-index="8">
+            <img src="" alt="Team Member 9" />
+          </div>
+          <div class="card" data-index="9">
+            <img src="" alt="Team Member 10" />
+          </div>
+          <div class="card" data-index="10">
+            <img src="" alt="Team Member 11" />
+          </div>
+          <div class="card" data-index="11">
+            <img src="" alt="Team Member 12" />
+          </div>
+          <div class="card" data-index="12">
+            <img src="" alt="Team Member 13" />
+          </div>
+        </div>
+        <button class="nav-arrow right">&#10095;</button>
+      </div>
+
+      <div class="member-info">
+        <h2 class="member-name">David Kim</h2>
+        <p class="member-role">Founder</p>
+        <a href="#" id="member-portfolio" class="portfolio-link" target="_blank">Ver Portafolio</a>
+      </div>
+    </section>
+
+    <section id="secc6" class="seccion6">
+      <h2 class="about-title">Making Off</h2>
+      <div class="store-links">
+        <img id="abrirModalSecc6" src="../multimedia/img/play-.svg" alt="video" />
+      </div>
+      <iframe id="youtube-player" width="560" height="315"
+        src="https://www.youtube.com/embed/8H64HNvXrqU?si=PYuC5-j3iMNpXDjQ" title="YouTube video player"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+  </main>
+  <!-- Botón flotante Calavera -->
+  <div class="flotante-calavera" id="btnCalavera">
+    <!-- <img
+        id="imgCalavera"
+
+      /> -->
+  </div>
+
+
+
+  <div id="miModalSecc6" class="modalSecc6">
+
+    <div class="modal-contenidoSecc6">
+
+      <span class="cerrarSecc6">&times;</span>
+      
+      <h2 class="invitacion">
+        <a href="about:blank" target="_blank">
+          Disponible ahora, clic para descargar
+          </a>
+      </h2>
+      
+
+
+      <div class="abstracto">
+        
+          <h3> <a href="about:blank" target="_blank">Descarga aquí</a></h3>
+        
+      </div>
+
+
+      <svg width="480" height="720" viewBox="0 0 230 350" xmlns="http://www.w3.org/2000/svg">
+
+        <g class="primera-capa pantalla">
+          <!-- Cuerpo del celular -->
+          <rect class="cuerpo" x="60" y="10" width="160" height="315" rx="15" ry="15" fill="white" stroke="#000"
+            stroke-width="2" />
+
+          <!-- Pantalla -->
+          <rect x="75" y="18" width="130" height="270" rx="5" ry="5" fill="#fff" />
+
+          <!-- Borde superior gris -->
+          <rect x="75" y="18" width="130" height="15" rx="5" ry="5" fill="#fff" />
+
+          <!-- Cámara y bocina -->
+          <circle cx="140" cy="19" r="3" fill="#666" />
+          <rect x="120" y="35" width="37" height="2" fill="#666" />
+
+          <!-- Barra de estado -->
+          <g id="status-bar" fill="#000" font-family="Arial, sans-serif" font-size="4.5">
+            <text id="current-time" x="80" y="25" font-weight="bold">12:00 PM</text>
+
+            <!-- WiFi -->
+            <g transform="translate(175,20) scale(0.4)">
+              <path d="M 0 6 A 6 6 0 0 1 12 6" fill="none" stroke="currentColor" stroke-width="0.8"
+                stroke-linecap="round" />
+              <path d="M 2 9 A 4 4 0 0 1 10 9" fill="none" stroke="currentColor" stroke-width="0.8"
+                stroke-linecap="round" />
+              <path d="M 4 12 A 2 2 0 0 1 8 12" fill="none" stroke="currentColor" stroke-width="0.8"
+                stroke-linecap="round" />
+              <circle cx="6" cy="14" r="1" fill="currentColor" />
+            </g>
+          </g>
+
+          <!-- Indicador batería -->
+          <rect x="190" y="22" width="6" height="3" fill="none" stroke="#000" stroke-width="0.5" rx="0.5" />
+          <rect x="196" y="22" width="1" height="1" fill="#000" />
+          <rect x="190.2" y="22.2" width="4.8" height="2.6" fill="#000" />
+
+          <!--Video-->
+          <foreignObject x="74.5" y="34" width="130.7" height="255">
+            <iframe xmlns="http://www.w3.org/1999/xhtml" id="video-game-player" width="100%" height="100%"
+              src="https://www.youtube.com/embed/wnFd7dRwzh0?autoplay=1&mute=1&controls=1" frameborder="0"
+              allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen controls>
+            </iframe>
+          </foreignObject>
+
+          <!-- Botón home -->
+          <circle cx="140" cy="300" r="7" fill="#666" stroke="#444" stroke-width="1" />
+
+          <!-- Botones laterales -->
+          <rect x="57" y="70" width="3" height="20" rx="1.5" ry="1.5" fill="#555" />
+          <rect x="57" y="100" width="3" height="20" rx="1.5" ry="1.5" fill="#555" />
+          <rect x="220" y="90" width="3" height="30" rx="1.5" ry="1.5" fill="#555" />
+        </g>
+      </svg>
+
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="primer-contenedor">
+      <div class="redes-logos">
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com/umbrio/" target="_blank"><img
+              src="../multimedia/icons/social-media/face.svg" alt="facebook" /></a>
+          <a href="https://www.instagram.com/umbrio/" target="_blank"><img
+              src="../multimedia/icons/social-media/instagram.svg" alt="instagram" /></a>
+          <a href="https://twitter.com/umbrio" target="_blank">
+            <img src="../multimedia/icons/social-media/x.svg" alt="twitter" /></a>
+          <a href="https://youtube.com/umbrio" target="_blank"><img src="../multimedia/icons/social-media/youtube.svg"
+              alt="youtube" /></a>
+          <a href="https://www.whatsapp.com/umbrio" target="_blank"><img src="../multimedia/icons/social-media/whas.svg"
+              alt="whatsapp" /></a>
+          <a href="https://tiktok.com/@umbrio" target="_blank"><img src="../multimedia/icons/social-media/tictok.svg"
+              alt="tiktok" /></a>
+        </div>
+        <div class="logos">
+          <img src="../multimedia/img/logo-sena.webp" alt="sena" />
+          <img src="../multimedia/img/logo.png" alt="logo" />
+        </div>
+      </div>
+
+      <div class="enlaces">
+        <a href="https://comunicaciongraficasena.blogspot.com/" target="_blank">
+          CENIGRAF
+        </a>
+        <a href="https://actividadfisicaycultura.blogspot.com/" target="_blank">
+          CEFAFC
+        </a>
+      </div>
+    </div>
+
+    <div class="copy">
+      <p>
+        Copyright &copy; 2025 Equipo Web-Umbrio | Todos los derechos
+        reservados .
+      </p>
+    </div>
+  </footer>
+  <script src="../js/seccion4.js"></script>
+  <script src="../js/seccion5.js"></script>
+  <script src="../js/main.js"></script>
+
+  <script>
+    const modal = document.getElementById("miModalSecc6");
+    const btnAbrir = document.getElementById("abrirModalSecc6");
+    const spanCerrar = document.getElementsByClassName("cerrarSecc6")[0];
+
+    const body = document.body;
+    btnAbrir.onclick = function () {
+      modal.style.display = "flex";
+      body.style.overflow = "hidden";
+    }
+
+    spanCerrar.onclick = function () {
+      modal.style.display = "none";
+      body.style.overflow = "auto";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        body.style.overflow = "auto";
+      }
+    }
+  </script>
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const options = { hour: '2-digit', minute: '2-digit', hour12: true };
+      document.getElementById('current-time').textContent =
+        now.toLocaleTimeString('es-ES', options).replace('a. m.', 'AM').replace('p. m.', 'PM');
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+  </script>
+</body>
+
+</html>

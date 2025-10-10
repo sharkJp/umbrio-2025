@@ -1,0 +1,397 @@
+
+/* Tablet/ celulares medianos */
+/* @media (max-width: 768px) {
+  .llama-menu {
+    width: 16vw;
+    height: 18vw;
+    margin-top: 4vw;
+  }
+
+  .menu {
+    right: 4vw;
+    top: 20vw;
+    width: 40vw;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); 
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  li a {
+    font-size: 4vw !important;
+    color: white;
+    padding: 5px;
+  }
+
+  .vela-menu {
+    display: none;
+  }
+
+  .contenedor-principal {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .interprete {
+    width: 160px;
+    height: 110px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .cerrar-boton {
+    top: 3px;
+    right: 3px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .interprete .close-icon {
+    font-size: 12px;
+  }
+
+  #cursor-img {
+    display: none; 
+  }
+} */
+
+/* Celulares pequeños: máximo 480px */
+/* @media (max-width: 480px) {
+  .menu {
+    width: 80vw;
+    top: 22vw;
+    right: 5vw;
+  }
+
+  li a {
+    font-size: 5vw !important;
+  }
+
+  .interprete {
+    width: 140px;
+    height: 100px;
+    top: 8px;
+    left: 8px;
+  }
+
+  .cerrar-boton {
+    width: 18px;
+    height: 18px;
+  }
+
+  .contenedor-principal {
+    flex-direction: column;
+  }
+
+  .vela {
+    width: 40%;
+    height: 50%;
+    top: 15%;
+    right: 35%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .flotante-calavera {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .flotante-calavera img {
+    width: 45px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .flotante-calavera img {
+    width: 40px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .seccion1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .smoke-container,
+  .smoke-container video {
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.7; 
+  }
+
+  .linterna {
+    background: radial-gradient(
+      circle 120px at var(--x, 50%) var(--y, 50%),
+      transparent 0%,
+      rgba(0, 0, 0, 0.95) 100%
+    );
+  }
+
+  .niebla {
+    opacity: 0.15; 
+  }
+
+  #overlay {
+    background: rgb(35, 15, 34);
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .linterna {
+    background: radial-gradient(
+      circle 80px at var(--x, 50%) var(--y, 50%),
+      transparent 0%,
+      rgba(0, 0, 0, 0.95) 100%
+    );
+  }
+
+  .smoke-container video {
+    opacity: 0.6;
+  }
+
+  .niebla {
+    opacity: 0.1;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .btn-cerrar {
+    margin-right: 5%;
+    font-size: 4vw;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .seccion1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .smoke-container,
+  .smoke-container video {
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.7; /
+  }
+
+  .linterna {
+    background: radial-gradient(
+      circle 120px at var(--x, 50%) var(--y, 50%),
+      transparent 0%,
+      rgba(0, 0, 0, 0.95) 100%
+    );
+  }
+
+  .niebla {
+    opacity: 0.15;
+  }
+
+  #overlay {
+    background: rgb(35, 15, 34);
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .linterna {
+    background: radial-gradient(
+      circle 80px at var(--x, 50%) var(--y, 50%),
+      transparent 0%,
+      rgba(0, 0, 0, 0.95) 100%
+    );
+  }
+
+  .smoke-container video {
+    opacity: 0.6;
+  }
+
+  .niebla {
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-cerrar {
+    margin-right: 5%;
+    font-size: 4vw;
+  }
+} */
+
+
+
+/* Responsive */
+/* @media (max-width: 768px) {
+  .contenedor-slider {
+    flex-direction: column;
+  }
+
+  .slider {
+    width: 100%;
+    height: 50%;
+  }
+
+  .slide {
+    width: 100%;
+    height: 100%;
+  }
+
+  .papiro-container {
+    width: 95%;
+    height: 150px;
+  }
+} */
+
+
+
+/* responsive: 2 por vista */
+@media (max-width: 1024px) {
+  .carrusel-item-secc3 {
+    flex: 0 0 calc((100% - 15px) / 2);
+  }
+}
+
+/* responsive: 1 por vista */
+@media (max-width: 600px) {
+  .carrusel-item-secc3 {
+    flex: 0 0 100%;
+  }
+
+  .prev-secc3,
+  .next-secc3 {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+/* 
+@media (max-width: 768px) {
+  .primer-contenedor {
+    flex-direction: column;
+  }
+  footer {
+    width: 100%;
+    height: 60vh;
+  }
+  .redes-sociales {
+    gap: 15px;
+  }
+  .redes-sociales img {
+    display: flex;
+    width: 40px;
+    height: auto;
+  }
+  .logos {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .logos img:first-child {
+    margin-top: 18px;
+    width: 50px;
+    height: auto;
+  }
+  .logos img:last-child {
+    width: 120px;
+    height: auto;
+  }
+  .enlaces {
+    flex-direction: column;
+  }
+  .enlaces a {
+    font-size: 0.9rem;
+  }
+  .copy p {
+    font-size: 0.75rem;
+  }
+} */
+
+
+/** para la seccion 4 **/
+@media (max-width: 768px) {
+	.about-title {
+		font-size: 4.5rem;
+	}
+
+	.card {
+		width: 200px;
+		height: 280px;
+	}
+
+	.card.left-2 {
+		transform: translateX(-250px) scale(0.8) translateZ(-300px);
+	}
+
+	.card.left-1 {
+		transform: translateX(-120px) scale(0.9) translateZ(-100px);
+	}
+
+	.card.right-1 {
+		transform: translateX(120px) scale(0.9) translateZ(-100px);
+	}
+
+	.card.right-2 {
+		transform: translateX(250px) scale(0.8) translateZ(-300px);
+	}
+
+	.member-name {
+		font-size: 2rem;
+	}
+
+	.member-role {
+		font-size: 1.2rem;
+	}
+
+	.member-name::before,
+	.member-name::after {
+		width: 50px;
+	}
+
+	.member-name::before {
+		left: -70px;
+	}
+
+	.member-name::after {
+		right: -70px;
+	}
+ 
+}
+    
+@media (min-width: 1600px) and (max-width: 1919px) {
+    /*
+        Aquí van los estilos para monitores de este tamaño específico,
+        como 1600x900.
+    */
+
+.seccion5 .interprete{
+  top: 10%;
+}
+}
+/* Se aplica a 1920px Y cualquier ancho superior. */
+@media screen and (min-width: 1920px) {
+    .papiro-centro {
+        width: 76% !important;
+    }
+    .about-title {
+		top: 6%;
+	}
+  .carousel-track .card{
+    top: 23%;
+    width: 340px;
+	height: 520px;
+  }
+  
+}

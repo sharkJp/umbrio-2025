@@ -1,0 +1,1309 @@
+:root {
+  --primer-color: #021740;
+  --segundo-color: #f2a007;
+  --tercer-color: #05f2f2;
+  --cuarto-color: #0596a6;
+  --quinto-color: #9430bf;
+  --sexto-color: rgb(238, 151, 230);
+  --septimo-color: rgba(147, 30, 231, 0.55);
+  --footer-color: #30163d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*** todos estos estilos para pantallas  == 1600 * 1919 ***/
+html,
+body {
+  max-width: 100%;
+  height: 100%;
+  background-image: url("../multimedia/img/fondo.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #170719;
+  cursor: none !important;
+}
+.seccion1,
+.seccion2,
+.seccion3,
+.seccion4,
+.seccion5,
+.seccion6 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: none !important;
+}
+
+#cursor-img {
+  position: fixed;
+  width: 90px;
+  height: auto;
+  pointer-events: none;
+  transform: translate(-80%, -10%);
+  z-index: 1000;
+  cursor: none !important;
+}
+
+/*navbar*/
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0;
+  cursor: none !important;
+}
+
+.contenedor-principal {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 10vh;
+  position: relative;
+  z-index: 0;
+  cursor: none !important;
+}
+
+.llama-menu {
+  width: 10vw;
+  height: 12vw;
+  position: relative;
+  cursor: none !important;
+}
+
+.vela {
+  position: absolute;
+  width: 35%;
+  height: 45%;
+  cursor: none !important;
+  z-index: 1111;
+  display: block;
+  top: 17%;
+  right: 38%;
+  cursor: none !important;
+}
+
+.vela:hover {
+  transform: scale(1.05);
+}
+.vela-menu {
+  width: 16vw;
+  height: 12vw;
+  cursor: none !important;
+  z-index: 1111;
+  display: block;
+  position: absolute;
+}
+
+.menu {
+  position: absolute;
+  list-style: none;
+  top: 5vw;
+  right: 18%;
+  width: 8vw;
+  height: 18vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: none !important;
+}
+.hidden {
+  display: none !important;
+}
+
+.menu ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: none !important;
+}
+
+li {
+  position: relative;
+  top: 5%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  cursor: none !important;
+}
+
+li a {
+  font-size: 1vw !important;
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0%;
+  color: var(--quinto-color);
+  cursor: none !important;
+  text-decoration: none;
+  text-align: center;
+  z-index: 111111;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu a:hover {
+  color: var(--cuarto-color);
+  cursor: none !important;
+  text-decoration: underline;
+}
+
+.mainmenu.hidden .vela-menu {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mainmenu.hidden {
+  display: none;
+}
+
+.mainmenu .vela-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*fin del navbar*/
+
+/* Contenedor del intérprete */
+.interprete {
+  width: 220px;
+  height: 150px;
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 10;
+  background: none;
+  border-radius: 5px;
+  cursor: none !important;
+}
+
+.seccion2 .interprete {
+  top: 10% !important;
+}
+.seccion3 .interprete {
+  top: 0% !important;
+}
+/* Video */
+.video-interprete {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 3px;
+  cursor: none !important;
+}
+
+/* Botón de cerrar ❌ */
+.cerrar-boton {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 11;
+  background-color: #f6e9c7;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: none !important;
+}
+
+.close-icon {
+  font-size: 0.8rem;
+  cursor: none !important;
+  z-index: 99999;
+}
+
+/* Botón mostrar video 👁️ */
+.mostrar-boton {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  width: 50px;
+  height: 20px;
+  font-size: 0.8rem;
+  background-color: var(--quinto-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+  cursor: none !important;
+}
+
+.seccion2 .mostrar-boton {
+  top: 10%;
+}
+.seccion5 .mostrar-boton{
+  top: 10% !important;
+}
+/* Botón flotante Calavera */
+
+.flotante-calavera {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 900;
+  display: none;
+  cursor: none !important;
+}
+
+.flotante-calavera img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.2s ease;
+  cursor: none !important;
+}
+
+/* animacio-Vibración */
+@keyframes vibrar {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.shake-horizontal {
+  animation: vibrar 0.3s infinite;
+}
+
+.flotante-calavera.shake-horizontal {
+  animation: vibrar 0.8s;
+}
+
+/*seccion 1*/
+
+.seccion1 {
+  flex-direction: column;
+}
+.smoke-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  cursor: none !important;
+}
+
+.smoke-container video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.9;
+  pointer-events: none;
+  transition: opacity 5s ease;
+  z-index: 99999;
+  cursor: none !important;
+}
+
+/* Video de niebla */
+.niebla {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  transition: opacity 2s ease;
+  z-index: 99999;
+}
+
+/* Capa que hará el efecto linterna */
+.linterna {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 250px at var(--x, 50%) var(--y, 50%),
+    transparent 0%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  transition: opacity 5s ease;
+}
+/* Estado oculto */
+.oculto {
+  opacity: 0;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(59, 22, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 5s ease; /* transición suave */
+}
+
+#overlay.hidden {
+  opacity: 0;
+}
+
+/*modal bienvenida lsc*/
+.modal.fullscreen-modal {
+  margin: 0 !important;
+  background-color: var(--primer-color) !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-dialog {
+  margin: 0 !important;
+  position: fixed;
+  width: 100% !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.fullscreen-modal .modal-content {
+  margin: 0 !important;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(18, 18, 17, 0.263);
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.modal-content video {
+  width: 70%;
+  height: auto;
+  max-height: 90vh;
+  display: block;
+}
+
+.modal-header {
+  border-bottom: none !important;
+  display: flex;
+}
+
+.btn-cerrar {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  border-radius: 8%;
+  font-size: 2vw;
+  border: none;
+}
+
+/*fin de modal*/
+
+.seccion1 {
+  flex-direction: column;
+}
+
+.smoke-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.smoke-container video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.9;
+  pointer-events: none;
+  transition: opacity 5s ease;
+  z-index: 99999;
+}
+
+/* Video de niebla */
+.niebla {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  transition: opacity 2s ease;
+  z-index: 99999;
+}
+
+/* Capa que hará el efecto linterna */
+.linterna {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 250px at var(--x, 50%) var(--y, 50%),
+    transparent 0%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  transition: opacity 5s ease;
+}
+/* Estado oculto */
+.oculto {
+  opacity: 0;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(59, 22, 56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 5s ease; /* transición suave */
+}
+
+#overlay.hidden {
+  opacity: 0;
+}
+
+
+/*modal bienvenida lsc*/
+.modal.fullscreen-modal {
+  margin: 0 !important;
+  background-color: rgba(10, 10, 10, 0.715);
+  position: fixed;
+  width: 100%;
+  /* max-width: 100%; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  margin: 0 !important;
+  position: fixed;
+  width: 100% !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.fullscreen-modal .modal-content {
+  margin: 0 !important;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(18, 18, 17, 0.263);
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.modal-content video {
+  width: 70%;
+  height: auto;
+  max-height: 90vh;
+  display: block;
+}
+
+.modal-header {
+  border-bottom: none !important;
+  display: flex;
+}
+
+.btn-cerrar {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  border-radius: 8%;
+  font-size: 2vw;
+  border: none;
+}
+
+/*fin de seccion 1*/
+/*inicio de seccion 2*/
+/* Caja del slider */
+.contenedor-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  width: 100%;
+  height: 100vh;
+  margin-top: 10%;
+}
+
+/* Slider de imágenes */
+.slider {
+  position: relative;
+  width: 45%;
+  height: 60%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.slide {
+  display: none;
+  width: 90%;
+  height: 90%;
+  background-image: url("../multimedia/img/papiro-centro.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slide img {
+  width: 90%;
+  height: 85%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 5% auto 0 auto;
+  display: block;
+}
+/* Animación de entrada difuminada más lenta */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInSlide 2s ease-in-out forwards; /* ← aquí controlas la velocidad */
+}
+
+/* Animación de salida tipo "wipe" */
+@keyframes wipeOut {
+  0% {
+    mask-position: 0% 0%;
+    -webkit-mask-position: 0% 0%;
+  }
+  100% {
+    mask-position: 100% 0%;
+    -webkit-mask-position: 100% 0%;
+  }
+}
+
+/* Slide saliente con efecto máscara */
+.out {
+  animation: wipeOut 1s ease-in-out forwards;
+  -webkit-mask-image: linear-gradient(to right, black 30%, transparent 70%);
+  mask-image: linear-gradient(to right, black 30%, transparent 70%);
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+  -webkit-mask-position: 0% 0%;
+  mask-position: 0% 0%;
+  z-index: 1;
+}
+
+/* Botones */
+.prev-secc2,
+.next-secc2 {
+  background: none !important;
+  cursor: none !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  color: var(--segundo-color) !important;
+  border: none;
+  font-size: 38px !important;
+  font-weight: bold;
+  z-index: 10;
+}
+.prev-secc2:hover,
+.next-secc2:hover {
+  color: white !important;
+}
+
+.prev-secc2 {
+  left: 5px !important;
+}
+.next-secc2 {
+  right: 5px;
+}
+
+/* .........................................................pergamino con texto */
+.papiro-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  width: 45%;
+  height: 70%;
+  overflow: visible;
+}
+
+/* Parte central */
+.papiro-centro {
+  flex: 0 1 auto;
+  width: 75%;
+  height: 65%;
+  background: url("../multimedia/img/papiro-centro.png") repeat-x center center;
+  background-size: auto 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.9s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  margin-top: 10%;
+  z-index: 500;
+}
+
+/* Extremos */
+.papiro-extremo {
+  position: absolute;
+  top: 40px;
+  height: 100%;
+  width: 82px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+  transition: transform 0.9s ease-in-out;
+}
+
+/* Texto */
+.papiro-contenido h1 {
+  color: var(--footer-color);
+  font-family: "Amarante" !important;
+  font-weight: bold;
+  text-align: center;
+  max-width: 80%;
+  font-size: 2rem;
+  margin-left: 10%;
+  opacity: 0.6;
+}
+
+.papiro-contenido p {
+  margin: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Amarante", serif !important;
+  color: var(--footer-color);
+  opacity: 0.7;
+}
+
+.papiro-izquierdo {
+  left: 3%;
+  background-image: url("../multimedia/img/papiro_izq.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  transform-origin: right center;
+}
+
+.papiro-derecho {
+  right: 2.5%;
+  background-image: url("../multimedia/img/papiro_der.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  transform-origin: right center;
+}
+
+/* Estado cerrado: extremos casi tocándose al centro */
+.papiro-container:not(.abierto) .papiro-izquierdo {
+  transform: translateX(70px);
+}
+
+.papiro-container:not(.abierto) .papiro-derecho {
+  transform: translateX(-70px);
+}
+
+.papiro-container.abierto .papiro-izquierdo {
+  transform: translateX(0);
+}
+
+.papiro-container.abierto .papiro-derecho {
+  transform: translateX(0);
+}
+
+/* Centro del pergamino */
+.papiro-container.abierto .papiro-centro {
+  transform: scaleX(1);
+}
+
+.papiro-container:not(.abierto) .papiro-centro {
+  transform: scaleX(0);
+}
+
+/* Transición sincronizada */
+.papiro-extremo,
+.papiro-centro {
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Mano animada caminando........................................................................... */
+.seccion2 {
+  position: relative;
+}
+
+.mano-animada {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 500;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* contenedor que sí se anima */
+.mano {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  opacity: 0;
+}
+
+/* frames */
+.mano .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  display: none;
+}
+
+.mano .frame.active {
+  display: block;
+}
+
+@keyframes caminar {
+  0% {
+    transform: translate(0, 0) scaleX(1);
+    opacity: 1;
+  }
+  10% {
+    transform: translate(10vw, -25px) scaleX(1);
+  }
+  20% {
+    transform: translate(20vw, 0) scaleX(1);
+  }
+  30% {
+    transform: translate(30vw, -25px) scaleX(1);
+  }
+  40% {
+    transform: translate(40vw, 0) scaleX(1);
+  }
+  49% {
+    transform: translate(calc(100vw + 150px), 0) scaleX(1);
+  }
+  50% {
+    transform: translate(calc(100vw + 150px), 0) scaleX(-1);
+  }
+  60% {
+    transform: translate(70vw, -25px) scaleX(-1);
+  }
+  70% {
+    transform: translate(60vw, 0) scaleX(-1);
+  }
+  80% {
+    transform: translate(40vw, -25px) scaleX(-1);
+  }
+  90% {
+    transform: translate(20vw, 0) scaleX(-1);
+  }
+  99% {
+    transform: translate(0, -25px) scaleX(-1);
+  }
+  100% {
+    transform: translate(0, 0) scaleX(1);
+    opacity: 0;
+  } /* se oculta al final */
+}
+
+/*fin seccion 2*/
+
+/*inicio seccion 3*/
+.seccion3 {
+  flex-direction: column;
+  position: relative;
+}
+
+.contenedor-carrusel-secc3 {
+  margin-top: 0;
+  width: 75%;
+  max-width: 1400px;
+  height: 100%;
+}
+
+.carrusel-secc3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Flechas */
+.prev-secc3,
+.next-secc3 {
+  position: absolute;
+  top: 50%;
+  transition: transform 0.4s ease, color 0.4s ease;
+  transform: perspective(500px) translateZ(0);
+  display: inline-block;
+  z-index: 20;
+  background: none;
+  color: var(--segundo-color);
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: none !important;
+  font-size: 38px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.prev-secc3:hover,
+.next-secc3:hover {
+  color: white;
+  transform: perspective(500px) translateZ(50px);
+}
+
+.prev-secc3 {
+  left: 8px;
+}
+
+.next-secc3 {
+  right: 8px;
+}
+
+/* Track (flex) */
+.carrusel-track-secc3 {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.4s ease;
+  will-change: transform;
+  padding: 20px 30px;
+  align-items: center;
+  top: 10%;
+  height: 80%;
+}
+
+/* item 3 por vista */
+.carrusel-item-secc3 {
+  flex: 0 0 calc((100% - 30px) / 3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+  margin-top: 22%;
+}
+
+/* CARD (efecto 3D ya integrado) */
+.cards-secc3 {
+  width: 280px;
+  height: 500px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.img-con-texto-secc3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background:var(--primer-color);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(18px);
+   border: solid 1px var(--segundo-color);
+  box-shadow: 0px 10px 18px rgba(238, 201, 36, 0.144);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+}
+
+.img-con-texto-secc3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.texto-slider-secc3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: var(--footer-color);
+  color: var(--segundo-color);
+  font-family: "amarante";
+  text-align: center;
+  z-index: 2;
+}
+
+.texto-slider-secc3 h2 {
+  font-size: 1.5rem;
+  font-family: "Amarante" !important;
+  text-transform: uppercase; /*solo para prueba*/
+}
+
+/* .segunda-img-secc3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5%;
+  margin: auto;
+  bottom: 10px;
+  transform: translateY(10%) translateZ(-1500px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 3;
+  pointer-events: none;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+} */
+.segunda-img-secc3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; 
+    margin: auto;
+    width: 100%; 
+    height: 120%; 
+    bottom: 0;
+    transform: none; 
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    pointer-events: none; 
+    z-index: 3;
+    backface-visibility: hidden;
+   overflow: hidden; 
+}
+
+.noah,
+.espanto,
+.simon,
+.perro{
+    width: 100% !important;
+  height: 100%;
+}
+.noah3d{
+  top: 10%;
+}
+/* Texto aparece solo en la segunda imagen */
+.cards-secc3:hover .texto-secundario-secc3 {
+  opacity: 1;
+}
+
+/* hover (desktop) y .active (mobile/tap) */
+.cards-secc3:hover .img-con-texto-secc3,
+.cards-secc3.active-secc3 .img-con-texto-secc3 {
+  transform: rotateX(30deg) translateY(-6%) scale(0.92);
+  opacity: 0.0;
+}
+
+.cards-secc3:hover .segunda-img-secc3,
+.cards-secc3.active-secc3 .segunda-img-secc3 {
+  opacity: 1;
+  transform: translateY(-20%) translateZ(80px) scale(1.15);
+  pointer-events: auto; /*aqui*/
+}
+
+/* ocultar scrollbar cuando se usa scroll en fallback */
+.carrusel-track-secc3::-webkit-scrollbar {
+  display: none;
+}
+
+.carrusel-track-secc3 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/** Modal **/
+.btn-brujula {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  cursor: none;
+}
+
+.btn-brujula label {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  margin-left: 3%;
+  margin-top: -3%;
+}
+
+.brujula {
+  width: 100%;
+  height: auto;
+  margin-left: 3%;
+  cursor: none;
+  margin-top: -3%;
+}
+
+/* --- Modal --- */
+#btn-modal {
+  display: none;
+}
+
+.modal-secc3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primer-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 99999;
+}
+
+.modal-contenido-secc3 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  max-width: 1200px;
+  text-align: center;
+  position: relative;
+}
+
+#btn-modal:checked ~ .modal-secc3 {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cerrar-secc3 {
+  position: absolute;
+  top: 15px !important;
+  right: -20px;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  color: red;
+}
+/*fin seccion 3*/
+/*footer*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--footer-color);
+  width: 100%;
+  height: 30vh;
+  cursor: none !important;
+}
+.primer-contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85%;
+  cursor: none !important;
+}
+.redes-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  cursor: none !important;
+}
+.redes-sociales {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  gap: 1.5vw;
+  cursor: none !important;
+}
+.redes-sociales a {
+  text-decoration: none;
+}
+.redes-sociales img {
+  width: 3vw;
+  height: 3vw;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 60px 60px -60px rgba(165, 171, 233, 0.5);
+  border-radius: 10px;
+  cursor: none;
+  opacity: 0.8;
+  cursor: none !important;
+}
+.redes-sociales img:hover {
+  transform: scale(1.1);
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  cursor: none !important;
+}
+.logos img:first-child {
+  width: 4vw;
+  height: auto;
+  margin: 1vw;
+  cursor: none;
+  cursor: none !important;
+}
+.logos img:last-child {
+  width: 12vw;
+  height: auto;
+  margin: 1vw;
+  cursor: none !important;
+}
+.enlaces {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  left: 10%;
+  cursor: none !important;
+}
+.enlaces a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--sexto-color);
+  font-size: 1.6rem;
+  font-family: "amarante";
+  letter-spacing: 3px;
+  margin: 1vw;
+  cursor: none !important;
+}
+.enlaces a:hover {
+  color: var(--segundo-color);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+  cursor: none !important;
+}
+
+.copy p {
+  font-size: 0.9rem;
+  color: var(--sexto-color);
+  opacity: 0.8;
+  text-align: center;
+  font-family: "amarante";
+  cursor: none !important;
+}
