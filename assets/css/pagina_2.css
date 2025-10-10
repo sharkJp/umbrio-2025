@@ -48,22 +48,22 @@ body.modal-open {
 /** seccion 5 **/
 
 .secion5 {
-  font-family: "amarante";
-}
-.seccion5 {
-  flex-direction: column;
-  position: relative;
+   width: 100%;
+  height: 100vh !important;
+  flex-direction: column !important;
+  position: absolute;
+  display: flex;
+  background-color: #e8431a !important;
 }
 
 .about-title {
   font-size: 7.5rem;
   font-weight: 900;
+  font-family: 'Amarante', serif;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   position: relative;
   top: 0px;
-  /*left: 50%;
-	transform: translateX(-50%);*/
   pointer-events: none;
   white-space: nowrap;
   text-align: center;
@@ -75,8 +75,10 @@ body.modal-open {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  animation: shimmer 6s infinite linear;
 }
 
+/* 
 .carousel-container {
   width: 100%;
   max-width: 1200px;
@@ -270,8 +272,172 @@ body.modal-open {
 .nav-arrow:hover {
   background: rgba(214, 74, 239, 0.8);
   transform: translateY(-50%) scale(1.1);
+} */
+
+
+/* --- Swiper --- */
+.swiper {
+  width: 90%;
+  max-width: 1200px;
+  padding: 30px 0;
 }
 
+.swiper-slide {
+  width: 380px !important;
+  height: 660px !important;
+   background: var(--footer-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  text-align: center;
+  padding: 25px 15px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+}
+
+/* --- Efecto blanco y negro / color --- */
+.team-photo {
+  width: 300px !important;
+  height: 370px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10%;
+  margin-bottom: 15px;
+  border: 3px solid white;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+/* --- Hover sobre la card --- */
+.swiper-slide:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(49, 220, 243, 0.2);
+}
+
+/* --- Cuando el mouse pasa sobre la imagen --- */
+.swiper-slide:hover .team-photo {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  border-color: #31dcf3;
+  box-shadow: 0 0 25px rgba(49, 220, 243, 0.4);
+}
+
+.member-name {
+  font-weight: 600;
+  font-size: 2.5rem;
+  font-family: 'Amarante', serif;
+  margin-bottom: 5px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.member-role {
+  font-size: 1.3rem;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+    /* Enlace con brillo */
+    .member-portafolio a {
+       color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      transition: color 0.4s ease;
+    }
+
+    .member-portafolio a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #070a0a, transparent);
+      opacity: 0;
+      transform: scaleX(0);
+      transition: all 0.4s ease;
+    }
+
+    .member-portafolio a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 8px #31dcf3;
+    }
+
+    .member-portafolio a:hover::after {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+/* --- Cambio de color de texto al hover --- */
+.swiper-slide:hover .member-name {
+  color: var(--segundo-color);
+}
+.swiper-slide:hover .member-role {
+  color: #edaad6;
+}
+.member-portafolio {
+  position: relative;
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #31dcf3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+/* Líneas decorativas */
+.member-portafolio::before,
+.member-portafolio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 2px;
+  background-color: #31dcf3;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.member-portafolio::before {
+  left: -50px;
+}
+
+.member-portafolio::after {
+  right: -50px;
+}
+
+/* Efecto animado al hacer hover */
+.swiper-slide:hover .member-portafolio::before,
+.swiper-slide:hover .member-portafolio::after {
+  width: 60px;
+  opacity: 1;
+}
+
+/* --- Swiper botones --- */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #e8431a !important;
+  transition: 0.3s;
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #f4f1f5 !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .team-photo {
+    width: 180px !important;
+    height: 200px !important;
+  }
+}
 /** seccion 6 **/
 .seccion6 {
   position: relative;

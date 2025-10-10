@@ -379,6 +379,7 @@
 .seccion5 .interprete{
   top: 10%;
 }
+
 }
 /* Se aplica a 1920px Y cualquier ancho superior. */
 @media screen and (min-width: 1920px) {
@@ -393,5 +394,6 @@
     width: 340px;
 	height: 520px;
   }
+
   
 }
