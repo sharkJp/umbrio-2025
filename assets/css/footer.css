@@ -1,4 +1,4 @@
-
+@import url('main.css');
 
 .primer-contenedor {
   display: flex;
@@ -72,7 +72,7 @@
 .enlaces a {
   text-align: center;
   text-decoration: none;
-  color: var(--sexto-color);
+  color: var(--septimo-color) !important;
   font-size: 1.6rem;
   font-family: 'amarante';
   letter-spacing: 3px;
