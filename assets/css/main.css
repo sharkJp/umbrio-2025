@@ -11,6 +11,11 @@
   --decino-color: #8c9eb1;
   --footer-color: #30163d;
   --fondo-body:#16061c;
+  /** colores filtro photo teams **/
+  --filtro-purple:#01174065;
+  --filtro-naranja:#f4a20965; 
+  --filtro-azul:#07f3f367; 
+  --filtro-violet:#8a6cb863;
 }
 
 * {
@@ -46,9 +51,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: none !important;
-                                         
-  
+  cursor: none !important;                                    
 }
 
 #cursor-img {
@@ -97,6 +100,7 @@ nav {
   cursor: none !important;
   display: block;
 }
+
 .llama-menu img{
   display: block;
 }
