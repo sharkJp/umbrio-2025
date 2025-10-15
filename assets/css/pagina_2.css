@@ -78,7 +78,7 @@ body.modal-open {
   flex-direction: column !important;
   position: relative;
   display: flex;
-  background-color: #e8431a !important;
+
 }
 
 .about-title {
