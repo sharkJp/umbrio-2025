@@ -747,7 +747,7 @@ li a {
   flex: 0 1 auto;
   width: 75%;
   height: 65%;
-  background: url("../multimedia/img/papiro-centro.png") repeat-x center center;
+  background: url("../multimedia/img/papiro-centro.webp") repeat-x center center;
   background-size: auto 100%;
   transform: scaleX(0);
   transform-origin: center;
@@ -796,7 +796,7 @@ li a {
 
 .papiro-izquierdo {
   left: 3%;
-  background-image: url("../multimedia/img/papiro_izq.png");
+  background-image: url("../multimedia/img/papiro_izq.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -806,7 +806,7 @@ li a {
 
 .papiro-derecho {
   right: 2.5%;
-  background-image: url("../multimedia/img/papiro_der.png");
+  background-image: url("../multimedia/img/papiro_der.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
