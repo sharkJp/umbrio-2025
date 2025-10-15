@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
     linterna.style.setProperty('--y', e.clientY + 'px');
   });
 
-  // DESPUÉS DE 7 segundos: aplicar clase "oculto" a niebla y linterna
+  // Después de 7 segundos: aplicar clase "oculto" a niebla y linterna
   setTimeout(() => {
     niebla.classList.add('oculto');
     linterna.classList.add('oculto');
 
-    // DESPUÉS DE 5 segundos más: ocultar niebla, mostrar cursor y habilitar scroll
+    // después de 5 segundos más: ocultar niebla, mostrar cursor y habilitar scroll
     setTimeout(() => {
       niebla.style.display = 'none';
       
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       document.body.style.overflow = "auto";
 
-      // MOSTRAR EL MODAL DESPUÉS DE LA ANIMACIÓN DE NIEBLA
+      // Mostrar el modal después de  la animación de niebla
       const modalElement = document.getElementById("modalFullscreen");
 
       if (modalElement) {
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
-    }, 900); // <- Espera 5 segundos después de ocultar linterna
-  }, 5000); // <- Primeros 7 segundos de animación
+    }, 5000); // <- Espera 5 segundos después de ocultar linterna
+  }, 7000); // <- Primeros 7 segundos de animación
 });
 

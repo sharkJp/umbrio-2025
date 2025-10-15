@@ -52,6 +52,7 @@
       </header>
 
       <!-- Resto del contenido -->
+         <!-- Botón intérprete -->
       <div class="bloque-interprete">
         <div class="interprete">
           <video class="video-interprete" src="../multimedia/video/Inicio2.mp4" muted controls></video>
@@ -399,6 +400,17 @@
     </section>
 
     <section id="secc6" class="seccion6">
+      <!-- Botón Persona intérprete -->
+      <div class="bloque-interprete">
+        <div class="interprete">
+          <video class="video-interprete" src="../multimedia/video/Making.mp4" muted controls></video>
+          <button class="cerrar-boton">
+            <span class="close-icon">❌</span>
+          </button>
+        </div>
+
+        <button class="mostrar-boton">👁️ LSC</button>
+      </div>
       <h2 class="about-title">Making Off</h2>
       <div class="store-links">
         <img id="abrirModalSecc6" src="../multimedia/img/play-.svg" alt="video" />
@@ -529,6 +541,7 @@
       </p>
     </div>
   </footer>
+  
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!--script-->
@@ -536,40 +549,5 @@
   <script src="../js/seccion5.js"></script>
   <script src="../js/seccion6.js"></script>
   <script src="../js/main.js"></script>
-
-  <script>
-    const modal = document.getElementById("miModalSecc6");
-    const btnAbrir = document.getElementById("abrirModalSecc6");
-    const spanCerrar = document.getElementsByClassName("cerrarSecc6")[0];
-
-    const body = document.body;
-    btnAbrir.onclick = function () {
-      modal.style.display = "flex";
-      body.style.overflow = "hidden";
-    }
-
-    spanCerrar.onclick = function () {
-      modal.style.display = "none";
-      body.style.overflow = "auto";
-    }
-
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-        body.style.overflow = "auto";
-      }
-    }
-  </script>
-  <script>
-    function updateTime() {
-      const now = new Date();
-      const options = { hour: '2-digit', minute: '2-digit', hour12: true };
-      document.getElementById('current-time').textContent =
-        now.toLocaleTimeString('es-ES', options).replace('a. m.', 'AM').replace('p. m.', 'PM');
-    }
-    updateTime();
-    setInterval(updateTime, 1000);
-  </script>
 </body>
-
 </html>

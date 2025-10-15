@@ -35,8 +35,7 @@ iniciarRecorrido();
     frameIndex = (frameIndex + 1) % manoFrames.length;
     manoFrames[frameIndex].classList.add("active");
   }, 200); // cambia cada 300ms, ajusta la velocidad
-
-
+  
  //.........................................................................................seccion 2
   // Código del Slider de la Sección 2 (con pergamino)
   const slides = document.querySelectorAll(".slide");

@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Mostrar bloques si se dispara el evento
   document.addEventListener('modalBienvenidaCerrado', mostrarBloques);
 
-  // 👇 NUEVO: Si el modal ya se cerró antes de que este JS cargara
+  // Si el modal ya se cerró antes de que este JS cargara
   if (window.modalBienvenidaYaCerrado) {
     mostrarBloques();
   }
 
-  // 👇 NUEVO: Si no existe el modal, mostrar los bloques directamente
+  //  Si no existe el modal, mostrar los bloques directamente
   if (!document.getElementById('modalFullscreen')) {
     mostrarBloques();
   }
