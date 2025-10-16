@@ -1,41 +1,3 @@
-const mano = document.querySelector(".mano");
-const frames = mano.querySelectorAll(".frame");
-let index = 0;
-
-// alternar frames para simular pasos
-setInterval(() => {
-  frames.forEach(f => f.classList.remove("active"));
-  frames[index].classList.add("active");
-  index = (index + 1) % frames.length;
-}, 200);
-
-function iniciarRecorrido() {
-  mano.style.opacity = "1"; // mostrar
-  mano.style.animation = "caminar 12s linear forwards"; // una sola vez
-}
-
-// cuando termine la animación, ocultar y esperar antes de reiniciar
-mano.addEventListener("animationend", () => {
-  mano.style.opacity = "0";       // se oculta
-  mano.style.animation = "none";  // reset animación
-  setTimeout(() => {
-    iniciarRecorrido();           // vuelve a empezar después de cierto tiempo
-  }, 5000); // <-- tiempo de espera (5s)
-});
-
-// arrancar la primera vez
-iniciarRecorrido();
-
-  // Animación de la mano (frames)
-  const manoFrames = document.querySelectorAll(".mano-animada .frame");
-  let frameIndex = 0;
-
-  setInterval(() => {
-    manoFrames.forEach((frame) => frame.classList.remove("active"));
-    frameIndex = (frameIndex + 1) % manoFrames.length;
-    manoFrames[frameIndex].classList.add("active");
-  }, 200); // cambia cada 300ms, ajusta la velocidad
-
 
  //.........................................................................................seccion 2
   // Código del Slider de la Sección 2 (con pergamino)
@@ -47,6 +9,7 @@ iniciarRecorrido();
   const textoPapiro = document.getElementById("texto-papiro");
 
   const textos = [
+
     `<h1>Catedral Antes</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Deserunt minus debitis molestiae consequatur earum aliquid, 
  odit totam in natus.</p>`,
@@ -72,6 +35,7 @@ iniciarRecorrido();
  Deserunt minus debitis molestiae consequatur earum aliquid, 
  odit totam in natus. Ea enim dolor a nemo alias obcaecati 
  provident ipsa excepturi autem.</p>`,
+
   
     `<h1>Cojines del Zaque Antes</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Deserunt minus debitis molestiae consequatur earum aliquid, 
