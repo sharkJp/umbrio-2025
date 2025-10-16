@@ -47,20 +47,40 @@ iniciarRecorrido();
   const textoPapiro = document.getElementById("texto-papiro");
 
   const textos = [
-    `<h1>Catedral Antes</h1> <p>La Catedral Basílica Metropolitana Santiago de Tunja, ubicada en la Plaza de Bolívar, es una de las catedrales más antiguas de Latinoamérica y de Colombia. Su construcción inició en 1562 y finalizó en 1607.</p>`,
+    `<h1>Catedral Antes</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Deserunt minus debitis molestiae consequatur earum aliquid, 
+ odit totam in natus.</p>`,
     `<h1>Catedral Ahora</h1> <p>La Catedral Basílica Metropolitana Santiago de Tunja, ubicada en la Plaza de Bolívar, es una de las catedrales más antiguas de Latinoamérica y de Colombia. Su construcción inició en 1562 y finalizó en 1607.</p>`,
 
-    `<h1>Plaza San Francisco Antes</h1> <p> Es la segunda más grande de Colombia después de la de Villa de Leyva, está rodeada por importantes edificios coloniales.</p>`,
-    `<h1>Plaza San Francisco Ahora</h1> <p> Es la segunda más grande de Colombia después de la de Villa de Leyva, está rodeada por importantes edificios coloniales.</p>`,
+    `<h1>Plaza San Francisco Antes</h1> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Deserunt minus debitis molestiae consequatur earum aliquid, 
+ odit totam in natus. Ea enim dolor a nemo alias obcaecati 
+ provident ipsa excepturi autem.</p>`,
+    `<h1>Plaza San Francisco Ahora</h1> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Deserunt minus debitis molestiae consequatur earum aliquid, 
+ odit totam in natus. Ea enim dolor a nemo alias obcaecati 
+ provident ipsa excepturi autem.</p>`,
     
     `<h1>El Pozo de Donato</h1> <p>El Pozo de Donato, también conocido como Pozo de Hunzahúa, es un lugar histórico cargado de leyendas...</p>`,
-    `<h1>Biblioteca</h1> <p>El Pozo de Donato, también conocido como Pozo de Hunzahúa, es un lugar histórico cargado de leyendas...</p>`,
+    `<h1>Biblioteca</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Deserunt minus debitis molestiae consequatur earum aliquid, 
+ odit totam in natus. Ea enim dolor a nemo alias obcaecati 
+ provident ipsa excepturi autem.</p>`,
    
     `<h1>Claustro San Agustín Antes</h1> <p>Ha cumplido múltiples funciones a lo largo de la historia: fue convento e iglesia, colegio, universidad, hospital, prisión.</p>`,
-    `<h1>Claustro San Agustín Ahora</h1> <p>Ha cumplido múltiples funciones a lo largo de la historia: fue convento e iglesia, colegio, universidad, hospital, prisión.</p>`,
+    `<h1>Claustro San Agustín Ahora</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Deserunt minus debitis molestiae consequatur earum aliquid, 
+ odit totam in natus. Ea enim dolor a nemo alias obcaecati 
+ provident ipsa excepturi autem.</p>`,
   
-    `<h1>Cojines del Zaque Antes</h1> <p>Ha cumplido múltiples funciones a lo largo de la historia: fue convento e iglesia, colegio, universidad, hospital, prisión.</p>`,
-    `<h1>Cojines del zaque Ahora</h1> <p>Ha cumplido múltiples funciones a lo largo de la historia: fue convento e iglesia, colegio, universidad, hospital, prisión.</p>`
+    `<h1>Cojines del Zaque Antes</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Deserunt minus debitis molestiae consequatur earum aliquid, 
+ odit totam in natus. Ea enim dolor a nemo alias obcaecati 
+ provident ipsa excepturi autem.</p>`,
+    `<h1>Cojines del zaque Ahora</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+ Deserunt minus debitis molestiae consequatur earum aliquid, 
+ odit totam in natus. Ea enim dolor a nemo alias obcaecati 
+ provident ipsa excepturi autem.</p>`
     
   ];
 

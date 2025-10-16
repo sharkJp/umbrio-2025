@@ -614,7 +614,7 @@ left: -1% !important;
 .papiro-centro {
   flex: 0 1 auto;
   width: 75%;
-  height: 65%;
+  height: 67%;
   background: url("../multimedia/img/papiro-centro.webp") repeat-x center center;
   background-size: auto 100%;
   transform: scaleX(0);
@@ -625,7 +625,7 @@ left: -1% !important;
   justify-content: center;
   padding: 20px 40px;
   box-sizing: border-box;
-  margin-top: 10%;
+  margin-top: 13%;
   z-index: 500;
 }
 
