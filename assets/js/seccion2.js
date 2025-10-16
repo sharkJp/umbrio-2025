@@ -1,41 +1,3 @@
-const mano = document.querySelector(".mano");
-const frames = mano.querySelectorAll(".frame");
-let index = 0;
-
-// alternar frames para simular pasos
-setInterval(() => {
-  frames.forEach(f => f.classList.remove("active"));
-  frames[index].classList.add("active");
-  index = (index + 1) % frames.length;
-}, 200);
-
-function iniciarRecorrido() {
-  mano.style.opacity = "1"; // mostrar
-  mano.style.animation = "caminar 12s linear forwards"; // una sola vez
-}
-
-// cuando termine la animación, ocultar y esperar antes de reiniciar
-mano.addEventListener("animationend", () => {
-  mano.style.opacity = "0";       // se oculta
-  mano.style.animation = "none";  // reset animación
-  setTimeout(() => {
-    iniciarRecorrido();           // vuelve a empezar después de cierto tiempo
-  }, 5000); // <-- tiempo de espera (5s)
-});
-
-// arrancar la primera vez
-iniciarRecorrido();
-
-  // Animación de la mano (frames)
-  const manoFrames = document.querySelectorAll(".mano-animada .frame");
-  let frameIndex = 0;
-
-  setInterval(() => {
-    manoFrames.forEach((frame) => frame.classList.remove("active"));
-    frameIndex = (frameIndex + 1) % manoFrames.length;
-    manoFrames[frameIndex].classList.add("active");
-  }, 200); // cambia cada 300ms, ajusta la velocidad
-
 
  //.........................................................................................seccion 2
   // Código del Slider de la Sección 2 (con pergamino)
@@ -47,10 +9,17 @@ iniciarRecorrido();
   const textoPapiro = document.getElementById("texto-papiro");
 
   const textos = [
-    `<h1>Catedral</h1> <p>La Catedral Basílica Metropolitana Santiago de Tunja, ubicada en la Plaza de Bolívar, es una de las catedrales más antiguas de Latinoamérica y de Colombia. Su construcción inició en 1562 y finalizó en 1607.</p>`,
-    `<h1>Plaza Simón Bolívar</h1> <p> Es la segunda más grande de Colombia después de la de Villa de Leyva, está rodeada por importantes edificios coloniales.</p>`,
-    `<h1>El Pozo de Donato</h1> <p>El Pozo de Donato, también conocido como Pozo de Hunzahúa, es un lugar histórico cargado de leyendas...</p>`,
-    `<h1>San Agustín</h1> <p>Ha cumplido múltiples funciones a lo largo de la historia: fue convento e iglesia, colegio, universidad, hospital, prisión.</p>`
+    `<h2>Catedral</h2> <p>La Catedral Basílica Metropolitana Santiago de Tunja, ubicada en la Plaza de Bolívar, es una de las catedrales más antiguas de Latinoamérica y de Colombia. Su construcción inició en 1562 y finalizó en 1607.</p>`,
+    `<h2>Catedral</h2> <p>Ha sido un lugar central de culto y testigo de la evolución de la región a lo largo de los siglos. La catedral refleja las profundas tradiciones católicas que han dado forma a la comunidad y sigue siendo un sitio clave tanto para ceremonias religiosas como para el patrimonio cultural.</p>`,
+    `<h2>Plaza Simón Bolívar</h2> <p> Es la segunda más grande de Colombia después de la de Villa de Leyva, está rodeada por importantes edificios coloniales.</p>`,
+    `<h2>El Pozo de Donato</h2> <p>El Pozo de Donato, también conocido como Pozo de Hunzahúa, es un lugar histórico cargado de leyendas...</p>`,
+    `<h2>San Agustín</h2> <p>Este claustro de modelo sevillano fue terminado a principios del siglo XVII, edificado sobre las ruinas del cercado del Zaque Muisca Quemuenchatocha.</p>`,
+    `<h2>San Agustín</h2> <p>Además de convento agustino, el claustro fue escuela, hospital de San Juan de Dios, cárcel de máxima seguridad para hombres y mujeres por un siglo, conocida como “El Panóptico”, con una famosa celda de castigo, El Solitario, y aparición propia, el Espanto del Panóptico.</p>`,
+    `<h2>Cojines del Zaque</h2> <p>Las colinas de Tunja eran utilizadas por los muiscas como sitios de adoración al Sol y a la Luna. Debido a ello, se cree que los dos círculos de roca, que miden aproximadamente un metro de diámetro y se encuentran en el Parque Arqueológico los Cojines del Zaque, eran plataformas para adorar a los dioses muiscas.</p>`,
+    `<h2>Cojines del Zaque</h2> <p>Este sitio arqueológico se encuentra al suroccidente de la ciudad de Tunja.</p>`,
+    `<h2>San Francisco</h2> <p>Sus orígenes datan de la segunda mitad del siglo XVI no acabándose construir hasta bien entrado el siglo XVII. Sus más de cuatrocientos años de historia han supuesto una serie de avatares hasta alcanzar el momento actual.</p>`,
+    `<h2>San Francisco</h2> <p>La iglesia y convento bajo la advocación de Santa María Magdalena pertenece a la Orden Franciscana OFM y está ubicado en el centro histórico de Tunja, en su sector más septentrional sobre la cárcava de San Francisco a la cual da nombre el convento.</p>`,
+    `<h2>Biblioteca</h2> <p></p>`
   
   ];
 
