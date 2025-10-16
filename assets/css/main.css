@@ -114,7 +114,7 @@ nav {
   display: block;
  right: 70px;
  top: 20px;
-  cursor: none !important;
+
 }
 
 .vela:hover {
@@ -273,7 +273,7 @@ li a {
 /* Botón mostrar video 👁️ */
 .mostrar-boton {
   position: absolute;
-  top: 3%;
+  top: 6%;
   left: 3%;
   width: 50px;
   height: 20px;
@@ -288,12 +288,11 @@ li a {
   z-index: 12;
   cursor: none !important;
 }
-
-.seccion2 .mostrar-boton {
-  top: 10%;
-}
-.seccion5 .mostrar-boton{
-  top: 10% !important;
+.mostrar-boton:hover{
+  background-color:var(--octavo-color);
+  transform:scale(1.05);
+  transition:all 0.3s ease;
+  cursor:none !important;
 }
 /* Botón flotante Calavera */
 
@@ -348,7 +347,7 @@ li a {
   animation: vibrar 0.8s;
 }
 
-/*seccion 1*/
+/*seccion 1....................................................................*/
 
 .seccion1 {
   flex-direction: column;
@@ -485,143 +484,12 @@ li a {
 }
 
 /*fin de modal*/
-
-.seccion1 {
-  flex-direction: column;
-}
-
-.smoke-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.smoke-container video {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  opacity: 0.9;
-  pointer-events: none;
-  transition: opacity 5s ease;
-  z-index: 99999;
-}
-
-/* Video de niebla */
-.niebla {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.3;
-  pointer-events: none;
-  mix-blend-mode: screen;
-  transition: opacity 2s ease;
-  z-index: 99999;
-}
-
-/* Capa que hará el efecto linterna */
-.linterna {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background: radial-gradient(
-    circle 250px at var(--x, 50%) var(--y, 50%),
-    transparent 0%,
-    rgba(0, 0, 0, 0.95) 100%
-  );
-  transition: opacity 5s ease;
-}
-/* Estado oculto */
-.oculto {
-  opacity: 0;
-}
-
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(59, 22, 56);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  transition: opacity 5s ease; /* transición suave */
-}
-
-#overlay.hidden {
-  opacity: 0;
-}
-
-
-/*modal bienvenida lsc*/
-.modal.fullscreen-modal {
-  margin: 0 !important;
-  background-color: rgba(10, 10, 10, 0.715);
-  position: fixed;
-  width: 100%;
-  /* max-width: 100%; */
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal-dialog {
-  margin: 0 !important;
-  position: fixed;
-  width: 100% !important;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.modal.fullscreen-modal .modal-content {
-  margin: 0 !important;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(18, 18, 17, 0.263);
-}
-
-.modal-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-.modal-content video {
-  width: 70%;
-  height: auto;
-  max-height: 90vh;
-  display: block;
-}
-
-.modal-header {
-  border-bottom: none !important;
-  display: flex;
-}
-
-.btn-cerrar {
-  position: absolute;
-  top: 5%;
-  right: 3%;
-  border-radius: 8%;
-  font-size: 2vw;
-  border: none;
-}
-
 /*fin de seccion 1*/
-/*inicio de seccion 2*/
+
+/*inicio de seccion 2.................................................................*/
+
 /* Caja del slider */
+
 .contenedor-slider {
   position: relative;
   display: flex;
@@ -730,7 +598,7 @@ li a {
   right: 5px;
 }
 
-/* .........................................................pergamino con texto */
+/* pergamino con texto */
 .papiro-container {
   position: relative;
   display: flex;
