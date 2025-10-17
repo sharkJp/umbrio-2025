@@ -174,7 +174,7 @@ body.modal-open {
   width: 88% !important;
   height: 88% !important;
   margin: 0 auto !important;
-
+background-color: none;
 }
 
 /* las cards*/
