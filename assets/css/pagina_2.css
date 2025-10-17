@@ -164,21 +164,20 @@ body.modal-open {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 75%;
+  width: 80%;
   height: 680px;
   padding: 30px 0;
- 
 }
-/*--😎😎😎😎--*/
 
 .swiper-wrapper{
   position: relative;
-  width: 80% !important;
+  width: 88% !important;
   height: 88% !important;
   margin: 0 auto !important;
-  background-color: #898989;
+
 }
 
+/* las cards*/
 .swiper-slide {
   top: -2%;
   position: relative;
@@ -193,36 +192,42 @@ body.modal-open {
   overflow: hidden;
 }
 
+
 .filtro-purple::before,
 .filtro-naranja::before,
 .filtro-azul::before,
-.filtro-violet::before{
+.filtro-violet::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-    border-radius: inherit; 
+  border-radius: inherit;
   transition: opacity 0.4s ease;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .filtro-purple::before {
-  background-color:var(--filtro-purple); 
+  background-color: var(--filtro-purple);
 }
+
 .filtro-naranja::before {
-  background-color:var(--filtro-naranja); 
+  background-color: var(--filtro-naranja);
 }
+
 .filtro-azul::before {
-  background-color:var(--filtro-azul);
+  background-color: var(--filtro-azul);
 }
+
 .filtro-violet::before {
-  background-color:var(--filtro-violet);
-}
+  background-color: var(--filtro-violet);
+} 
+
 .swiper-slide:hover::before {
   opacity: 0;
 }
+
 
 /* --- Efecto blanco y negro / color --- */
 .team-photo {
@@ -230,11 +235,12 @@ body.modal-open {
   height: 370px !important;
   border-radius: 50%;
   object-fit: cover;
-  margin-top: 10%;
+  margin-top: 0%;
   margin-bottom: 15px;
   border: 3px solid var(--noveno-color);
   filter: grayscale(100%);
   transition: all 0.5s ease;
+
 }
 
 /* --- Hover sobre la card --- */
@@ -299,13 +305,16 @@ body.modal-open {
   opacity: 1;
   transform: scaleX(1);
 }
+
 /* --- Cambio de color de texto al hover --- */
 .swiper-slide:hover .member-name {
   color: var(--segundo-color);
 }
+
 .swiper-slide:hover .member-role {
   color: #edaad6;
 }
+
 .member-portafolio {
   position: relative;
   display: inline-block;
@@ -316,6 +325,8 @@ body.modal-open {
   margin-top: 10px;
   margin-bottom: 0;
   font-weight: 500;
+  z-index: 10;
+  cursor: none;
 }
 
 /* Líneas decorativas */
@@ -330,14 +341,17 @@ body.modal-open {
   transform: translateY(-50%);
   opacity: 0.7;
   transition: width 0.3s ease, opacity 0.3s ease;
+   cursor: none;
 }
 
 .member-portafolio::before {
   left: -50px;
+   cursor: none;
 }
 
 .member-portafolio::after {
   right: -50px;
+   cursor: none;
 }
 
 /* Efecto animado al hacer hover */
@@ -345,6 +359,7 @@ body.modal-open {
 .swiper-slide:hover .member-portafolio::after {
   width: 60px;
   opacity: 1;
+   cursor: none;
 }
 
 /* --- Swiper botones --- */
@@ -356,7 +371,9 @@ body.modal-open {
   transition: 0.3s !important;
   font-size: 1.5rem !important;
   font-weight: bold !important;
+  cursor: none;
 }
+
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
@@ -370,6 +387,7 @@ body.modal-open {
     height: 200px !important;
   }
 }
+
 /** seccion 6 **/
 .seccion6 {
   position: relative;
