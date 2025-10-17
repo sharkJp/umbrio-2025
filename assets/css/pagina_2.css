@@ -1,9 +1,18 @@
 /* === Estilos exclusivos para la sección 4 de page2.html === */
-
+html,
+body {
+  background-image: none;
+  background-color: none !important;
+}
 .seccion4 {
+   background-image: url('../multimedia/img/panelSombreon.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  z-index: 1;
   width: 100%;
   height: 100vh;
-  display: block; /* corregimos el centrado del header */
+  display: block;
 }
 .seccion4 h2 {
   font-size: 7.5rem;
@@ -24,6 +33,52 @@
   background-clip: text;
   color: transparent;
 }
+
+
+.fuego {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: auto;
+  opacity: 1;
+}
+
+.fuego-1 {
+  top: 80%;
+  left: 75%;
+  width: 4% !important;
+}
+
+.fuego-2 {
+  top: 80%;
+  left: 20%;
+  width: 4% !important;
+}
+
+.fuego-3 {
+  top: 67%;
+  left: 60%;
+  width: 3% !important;
+}
+
+.fuego-4 {
+  top: 67%;
+  left: 37%;
+  width: 3% !important;
+}
+
+.fuego-5 {
+  top: 65%;
+  left: 54%;
+  width: 2% !important;
+}
+
+.fuego-6 {
+  top: 65%;
+  left: 44%;
+  width: 2% !important;
+}
+
 .seccion4 .mainmenu {
   margin-top: -30%;
 }
@@ -105,18 +160,33 @@ body.modal-open {
 
 /* --- Swiper --- */
 .swiper {
-  width: 90%;
-  /* max-width: 1200px; */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 75%;
+  height: 680px;
   padding: 30px 0;
+ 
+}
+/*--😎😎😎😎--*/
+
+.swiper-wrapper{
+  position: relative;
+  width: 80% !important;
+  height: 88% !important;
+  margin: 0 auto !important;
+  background-color: #898989;
 }
 
 .swiper-slide {
-  position: relative;/*-- aqui--*/
-  width: 380px !important;
-  height: 660px !important;
+  top: -2%;
+  position: relative;
+  width: 360px !important;
+  height: 630px !important;
   background-color: var(--footer-color);
-  box-shadow: 0 10px 20px var(--body-color);
-  border-radius: 65px 25px 15px 0;
+  box-shadow: 0 3px 7px rgba(255, 192, 203, 0.637);
+  border-radius: 65px 0px 35px 0;
   text-align: center;
   padding: 25px 15px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -153,6 +223,7 @@ body.modal-open {
 .swiper-slide:hover::before {
   opacity: 0;
 }
+
 /* --- Efecto blanco y negro / color --- */
 .team-photo {
   width: 300px !important;
@@ -279,10 +350,10 @@ body.modal-open {
 /* --- Swiper botones --- */
 .swiper-button-next,
 .swiper-button-prev {
-  position: absolute;
-  margin-top: 50% !important;
+  position:absolute;
+  top: 60% !important;
   color: #e8431a !important;
-  transition: 0.3s;
+  transition: 0.3s !important;
   font-size: 1.5rem !important;
   font-weight: bold !important;
 }
