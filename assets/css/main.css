@@ -1,6 +1,6 @@
 :root {
   --primer-color: #011740;
-  --segundo-color: #f4a009;
+  --segundo-color: #f4a209;
   --tercer-color: #07f3f3;
   --cuarto-color: #0697a8;
   --quinto-color: #9431c0;
@@ -12,10 +12,15 @@
   --footer-color: #30163d;
   --fondo-body:#16061c;
   /** colores filtro photo teams **/
-  --filtro-purple:#01174065;
-  --filtro-naranja:#f4a20965; 
+  --filtro-purple:#f6e9c771;
+  --filtro-naranja:#fabc4965; 
   --filtro-azul:#07f3f367; 
   --filtro-violet:#8a6cb863;
+  --phone-color: #9676d9;
+  --phone1-color: #4c3880;
+  --phone2-color:  #5424ac;
+  --phone3-color: #442c64 ;
+  --phone4-color:  #382854 ;
 }
 
 * {

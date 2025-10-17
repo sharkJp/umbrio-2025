@@ -311,16 +311,7 @@ body.modal-open {
   overflow: hidden;
 }
 
-.seccion6 iframe {
-  position: absolute;
-  top: 20%;
-  left: 18%;
-  width: 65%;
-  height: 70%;
-  z-index: 1;
-  object-fit: cover;
-  border-radius: 40px 0px 23px 80px;
-}
+
 .seccion6 h2 {
   font-size: 7.5rem;
   font-weight: 900;
@@ -418,23 +409,6 @@ body.modal-open {
   color: #da8f8f;
   text-decoration: none;
 }
-svg {
-  position: relative;
-  top: -5%;
-  right: 18%;
-  transform: translate(30%, 10%) rotate(-25deg);
-  transition: all 0.4s ease;
-}
-/* Hace que el video se adapte perfectamente */
-foreignObject iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0px;
-  display: block;
-  color: #4e4d4d39;
-  border-radius: 0 0 8px 8px;
-}
 .invitacion a {
   position: absolute;
   right: 15%;
@@ -504,4 +478,124 @@ foreignObject iframe {
 }
 .invitacion a {
   text-decoration: none;
+}
+
+/* phone modal video juego */
+#phone {
+  --c-frame: rgba(0, 0, 0, 0.548);
+  --c-interface: black;
+  --c-headline: black;
+  --c-screen: #e4e2e2;
+  --c-letter: #fff;
+  --c-date: black;
+  --c-subline: #898989;
+  --c-text: #A7A7A7;
+  --empty-mask: 100%;
+  --headline-y: 0;
+  position: absolute;
+  top: -10%;
+  left: 30%;
+  transform: translate(-70%, 5%) scale(0.9) rotate(-30deg);
+  width: 340px;
+  aspect-ratio: 9 / 19.5; /* mantiene proporción de celular */
+  border: solid 8px #39063fe6;
+  border-radius: 13% / 5.7%;
+  color: var(--c-interface);
+  cursor: none;
+}
+
+#phone:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -0.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 27px;
+  width: 140px;
+  border-radius: 0 0 16px 16px;
+  background: var(--c-frame);
+}
+
+#phone .screen {
+  position: relative;
+  background-color: var(--phone-color) !important;
+  width: 100%;
+  height: 100%;
+  background: var(--c-screen);
+  border-radius: 36px;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+background: none;
+}
+
+#phone .screen .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #d70aeeb5; */
+  overflow: hidden;
+}
+
+
+
+#phone .time,
+#phone .battery,
+#phone .cellular,
+#phone .wifi {
+  position: absolute;
+  top: 17px;
+}
+
+
+#phone .time {
+  left: 21px;
+  top: 15px;
+  font-size: 100%;
+  font-weight: 600;
+}
+
+#phone .battery {
+  right: 15px;
+  width: 25px;
+  height: 12px;
+}
+
+#phone .cellular {
+  right: 64px;
+  width: 18px;
+  height: 12px;
+}
+
+#phone .wifi {
+  right: 44px;
+  width: 16px;
+  height: 12px;
+}
+
+#phone .screen {
+  position: relative;
+  width: 100%;
+}
+
+#phone .screen .content::-webkit-scrollbar {
+  display: none;
+}
+#phone .entries foreignObject {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#video-game-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 18px;
+  display: block;
 }
