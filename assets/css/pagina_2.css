@@ -1,9 +1,18 @@
 /* === Estilos exclusivos para la sección 4 de page2.html === */
-
+html,
+body {
+  background-image: none;
+  background-color: none !important;
+}
 .seccion4 {
+   background-image: url('../multimedia/img/panelSombreon.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  z-index: 1;
   width: 100%;
   height: 100vh;
-  display: block; /* corregimos el centrado del header */
+  display: block;
 }
 .seccion4 h2 {
   font-size: 7.5rem;
@@ -24,6 +33,52 @@
   background-clip: text;
   color: transparent;
 }
+
+
+.fuego {
+  position: absolute;
+  z-index: 10;
+  width: 100px;
+  height: auto;
+  opacity: 1;
+}
+
+.fuego-1 {
+  top: 80%;
+  left: 75%;
+  width: 4% !important;
+}
+
+.fuego-2 {
+  top: 80%;
+  left: 20%;
+  width: 4% !important;
+}
+
+.fuego-3 {
+  top: 67%;
+  left: 60%;
+  width: 3% !important;
+}
+
+.fuego-4 {
+  top: 67%;
+  left: 37%;
+  width: 3% !important;
+}
+
+.fuego-5 {
+  top: 65%;
+  left: 54%;
+  width: 2% !important;
+}
+
+.fuego-6 {
+  top: 65%;
+  left: 44%;
+  width: 2% !important;
+}
+
 .seccion4 .mainmenu {
   margin-top: -30%;
 }
@@ -105,18 +160,33 @@ body.modal-open {
 
 /* --- Swiper --- */
 .swiper {
-  width: 90%;
-  /* max-width: 1200px; */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 75%;
+  height: 680px;
   padding: 30px 0;
+ 
+}
+/*--😎😎😎😎--*/
+
+.swiper-wrapper{
+  position: relative;
+  width: 80% !important;
+  height: 88% !important;
+  margin: 0 auto !important;
+  background-color: #898989;
 }
 
 .swiper-slide {
-  position: relative;/*-- aqui--*/
-  width: 380px !important;
-  height: 660px !important;
+  top: -2%;
+  position: relative;
+  width: 360px !important;
+  height: 630px !important;
   background-color: var(--footer-color);
-  box-shadow: 0 10px 20px var(--body-color);
-  border-radius: 65px 25px 15px 0;
+  box-shadow: 0 3px 7px rgba(255, 192, 203, 0.637);
+  border-radius: 65px 0px 35px 0;
   text-align: center;
   padding: 25px 15px;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -153,6 +223,7 @@ body.modal-open {
 .swiper-slide:hover::before {
   opacity: 0;
 }
+
 /* --- Efecto blanco y negro / color --- */
 .team-photo {
   width: 300px !important;
@@ -279,10 +350,10 @@ body.modal-open {
 /* --- Swiper botones --- */
 .swiper-button-next,
 .swiper-button-prev {
-  position: absolute;
-  margin-top: 50% !important;
+  position:absolute;
+  top: 60% !important;
   color: #e8431a !important;
-  transition: 0.3s;
+  transition: 0.3s !important;
   font-size: 1.5rem !important;
   font-weight: bold !important;
 }
@@ -311,16 +382,7 @@ body.modal-open {
   overflow: hidden;
 }
 
-.seccion6 iframe {
-  position: absolute;
-  top: 20%;
-  left: 18%;
-  width: 65%;
-  height: 70%;
-  z-index: 1;
-  object-fit: cover;
-  border-radius: 40px 0px 23px 80px;
-}
+
 .seccion6 h2 {
   font-size: 7.5rem;
   font-weight: 900;
@@ -340,6 +402,17 @@ body.modal-open {
   background-clip: text;
   color: transparent;
 }
+iframe {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  width: 65%;
+  height: 70%;
+  z-index: 1;
+  object-fit: cover;
+  border-radius: 40px 0px 23px 80px;
+}
+
 .store-links {
   position: fixed;
   top: 45%;
@@ -418,23 +491,6 @@ body.modal-open {
   color: #da8f8f;
   text-decoration: none;
 }
-svg {
-  position: relative;
-  top: -5%;
-  right: 18%;
-  transform: translate(30%, 10%) rotate(-25deg);
-  transition: all 0.4s ease;
-}
-/* Hace que el video se adapte perfectamente */
-foreignObject iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0px;
-  display: block;
-  color: #4e4d4d39;
-  border-radius: 0 0 8px 8px;
-}
 .invitacion a {
   position: absolute;
   right: 15%;
@@ -504,4 +560,124 @@ foreignObject iframe {
 }
 .invitacion a {
   text-decoration: none;
+}
+
+/* phone modal video juego */
+#phone {
+  --c-frame: rgba(0, 0, 0, 0.548);
+  --c-interface: black;
+  --c-headline: black;
+  --c-screen: #e4e2e2;
+  --c-letter: #fff;
+  --c-date: black;
+  --c-subline: #898989;
+  --c-text: #A7A7A7;
+  --empty-mask: 100%;
+  --headline-y: 0;
+  position: absolute;
+  top: -10%;
+  left: 30%;
+  transform: translate(-70%, 5%) scale(0.9) rotate(-30deg);
+  width: 340px;
+  aspect-ratio: 9 / 19.5; /* mantiene proporción de celular */
+  border: solid 8px #39063fe6;
+  border-radius: 13% / 5.7%;
+  color: var(--c-interface);
+  cursor: none;
+}
+
+#phone:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -0.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 27px;
+  width: 140px;
+  border-radius: 0 0 16px 16px;
+  background: var(--c-frame);
+}
+
+#phone .screen {
+  position: relative;
+  background-color: var(--phone-color) !important;
+  width: 100%;
+  height: 100%;
+  background: var(--c-screen);
+  border-radius: 36px;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+background: none;
+}
+
+#phone .screen .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #d70aeeb5; */
+  overflow: hidden;
+}
+
+
+
+#phone .time,
+#phone .battery,
+#phone .cellular,
+#phone .wifi {
+  position: absolute;
+  top: 17px;
+}
+
+
+#phone .time {
+  left: 21px;
+  top: 15px;
+  font-size: 100%;
+  font-weight: 600;
+}
+
+#phone .battery {
+  right: 15px;
+  width: 25px;
+  height: 12px;
+}
+
+#phone .cellular {
+  right: 64px;
+  width: 18px;
+  height: 12px;
+}
+
+#phone .wifi {
+  right: 44px;
+  width: 16px;
+  height: 12px;
+}
+
+#phone .screen {
+  position: relative;
+  width: 100%;
+}
+
+#phone .screen .content::-webkit-scrollbar {
+  display: none;
+}
+#phone .entries foreignObject {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#video-game-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 18px;
+  display: block;
 }
