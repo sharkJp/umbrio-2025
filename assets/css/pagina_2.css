@@ -331,6 +331,17 @@ body.modal-open {
   background-clip: text;
   color: transparent;
 }
+iframe {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  width: 65%;
+  height: 70%;
+  z-index: 1;
+  object-fit: cover;
+  border-radius: 40px 0px 23px 80px;
+}
+
 .store-links {
   position: fixed;
   top: 45%;
