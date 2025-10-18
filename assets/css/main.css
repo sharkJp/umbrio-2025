@@ -16,11 +16,12 @@
   --filtro-naranja:#fabc4965; 
   --filtro-azul:#07f3f367; 
   --filtro-violet:#8a6cb863;
-  --phone-color: #9676d9;
+  --phone-color: #9676d9;/*este*/
   --phone1-color: #4c3880;
   --phone2-color:  #5424ac;
-  --phone3-color: #442c64 ;
+  --phone3-color:  #65b1c2 ;/*este*/
   --phone4-color:  #382854 ;
+  --phone5-color:#00CCFF;/*este*/
 }
 
 * {
@@ -472,6 +473,7 @@ li a {
   height: auto;
   max-height: 90vh;
   display: block;
+  border-radius: 10px !important;
 }
 
 .modal-header {
