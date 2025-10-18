@@ -20,7 +20,7 @@ const modal = document.getElementById("miModalSecc6");
       }
     }
 
-     function updateTime() {
+    function updateTime() {
       const now = new Date();
       const options = { hour: '2-digit', minute: '2-digit', hour12: true };
       document.getElementById('current-time').textContent =

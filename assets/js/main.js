@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mostrarBloques();
   }
 
-  //  Si no existe el modal, mostrar los bloques directamente
+  // Si no existe el modal, mostrar los bloques directamente
   if (!document.getElementById('modalFullscreen')) {
     mostrarBloques();
   }
@@ -139,21 +139,6 @@ const fuegoSrc = basePath + "calavera2.webp";
   });
 
 
-// Código del Cursor (debe estar fuera de DOMContentLoaded)
-/*const cursor = document.getElementById("cursor-img");
-if (cursor) {
-  document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
-  });
-  document.addEventListener("touchmove", (e) => {
-    const touch = e.touches[0];
-    cursor.style.left = touch.clientX + "px";
-    cursor.style.top = touch.clientY + "px";
-  });
-}*/
-
-
    const cursor = document.getElementById("cursor-img");
     function showSlide(index) {
       slides.forEach((slide) => (slide.style.display = "none"));
@@ -174,12 +159,3 @@ if (cursor) {
     });
  
   
- /* window.addEventListener('scroll', function () {
-    const boton = document.querySelector('.flotante-calavera');
-    if (window.scrollY > 300) {
-      boton.style.display = 'block';
-    } else {
-      boton.style.display = 'none';
-    }
-  });*/
-
