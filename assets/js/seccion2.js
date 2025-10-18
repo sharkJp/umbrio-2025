@@ -9,7 +9,6 @@ const papiroContainer = document.querySelector(".papiro-container");
 const textoPapiro = document.getElementById("texto-papiro");
 
 const textos = [
-
   `<h1>Catedral</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Deserunt minus debitis molestiae consequatur earum aliquid, 
  odit totam in natus.</p>`,
@@ -31,23 +30,20 @@ const textos = [
  Deserunt minus debitis molestiae consequatur earum aliquid, 
  odit totam in natus. Ea enim dolor a nemo alias obcaecati 
  provident ipsa excepturi autem.</p>`,
-
   `<h1>Claustro San Agustín</h1> <p>Ha cumplido múltiples funciones a lo largo de la historia: fue convento e iglesia, colegio, universidad, hospital, prisión.</p>`,
 
   `<h1>Claustro San Agustín</h1> 
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Deserunt minus debitis molestiae consequatur earum aliquid, 
  odit totam in natus. Ea enim dolor a nemo alias obcaecati 
  provident ipsa excepturi autem.</p>`,
-
-
-
   `<h1>Cojines del Zaque</h1> 
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Deserunt minus debitis molestiae consequatur earum aliquid, 
  odit totam in natus. Ea enim dolor a nemo alias obcaecati 
  provident ipsa excepturi autem.</p>`,
-
   `<h1>Cojines del zaque</h1> 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Deserunt minus debitis molestiae consequatur earum aliquid, 
