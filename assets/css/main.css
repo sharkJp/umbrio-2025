@@ -65,7 +65,7 @@ body {
   width: 90px;
   height: auto;
   pointer-events: none;
-  transform: translate(-80%, -10%);
+  transform: translate(-97%, -10%);
   z-index: 1000;
   cursor: none !important;
 }
