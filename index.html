@@ -298,9 +298,45 @@
         <input type="checkbox" id="btn-modal">
         <div class="modal-secc3">
           <div class="modal-contenido-secc3">
-            <label for="btn-modal" class="cerrar-secc3">&times;</label> <img src="./assets/multimedia/img/tunja.webp"
-              alt=" Mapa de Tunja" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+          <label for="btn-modal" class="cerrar-secc3">&times;</label>
+
+          <!-- Contenedor que envuelve mapa e indicadores -->
+          <div class="mapa-wrapper">
+            <img src="./assets/multimedia/img/tunja.webp"
+              alt="Mapa de Tunja" class="mapa-base">
+
+            <!-- Contenedor de pines interactivos -->
+            <div class="mapa-interactivo">
+              <div class="pin" style="top: 35%; left: 45%;">  <!-- Aqui es donde se puede mover la posicion de las calaveras (revisar en resposive si se mueven de posicion)-->
+                <div class="tooltip">
+                  <img src="./assets/multimedia/img/img-tunja/Catedral ahora.webp" alt="Catedral de Tunja">
+                  <h4>Catedral de Tunja</h4>
+                </div>
+              </div>
+
+              <div class="pin" style="top: 52%; left: 60%;">
+                <div class="tooltip">
+                  <img src="./assets/multimedia/img/img-tunja/Cojines del Zaque ahora.webp" alt="Cojines del Zaque">
+                  <h4>Cojines del Zaque</h4>
+                </div>
+              </div>
+
+              <div class="pin" style="top: 70%; left: 40%;">
+                <div class="tooltip">
+                  <img src="./assets/multimedia/img/img-tunja/San Agustìn antes.webp" alt="San Agustín">
+                  <h4>San Agustín</h4>
+                </div>
+              </div>
+
+              <div class="pin" style="top: 42%; left: 56%;">
+                <div class="tooltip">
+                  <img src="./assets/multimedia/img/img-tunja/Biblioteca ahora.webp" alt="Biblioteca">
+                  <h4>Biblioteca</h4>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
         </div>
 
     </section>
