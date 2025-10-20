@@ -62,12 +62,14 @@ body {
 
 #cursor-img {
   position: fixed;
-  width: 90px;
+  width: 90px;    
   height: auto;
   pointer-events: none;
-  transform: translate(-80%, -10%);
-  z-index: 1000;
-  cursor: none !important;
+  z-index: 10000;
+  transform: translate(-70px, -8px); 
+  display: block;
+  will-change: transform, left, top;
+  transition: transform 0.08s linear;
 }
 
 /*navbar*/
@@ -988,7 +990,7 @@ left: -1% !important;
 }
 
 .modal-contenido-secc3 {
-  background: #fff;
+  background:#fabc4965; 
   padding: 20px;
   border-radius: 10px;
   width: 80%;
@@ -1133,4 +1135,170 @@ left: -1% !important;
   text-align: center;
   font-family: "amarante";
   cursor: none !important;
+}
+
+/* Contenedor del mapa interactivo tunja ......................................................................... */
+.mapa-interactivo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo de los pines (icono calavera o marcador) */
+.pin {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-image: url('../multimedia/img/calavera.webp'); /* tu ícono personalizado */
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -100%);
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  z-index: 2;
+}
+
+.pin:hover {
+  transform: translate(-50%, -110%) scale(1.2);
+  filter: drop-shadow(0 0 10px #ff0000);
+}
+
+/* Mini ventana (tooltip) */
+.tooltip {
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px;
+  width: 140px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+/* Imagen dentro del tooltip */
+.tooltip img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+/* Título dentro del tooltip */
+.tooltip h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Efecto al pasar el cursor */
+.pin:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+.cerrar-secc3 {
+  position: absolute;
+  top: 25px;    
+  right: 15px;     
+  font-size: 60px; 
+  color: var(--filtro-naranja); 
+  cursor: pointer;
+  z-index: 10;     
+  transition: color 0.3s ease;
+}
+
+.cerrar-secc3:hover {
+  color: var(--segundo-color);
+}
+
+/* Contenedor principal que une imagen y pines */
+.mapa-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Imagen del mapa */
+.mapa-base {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Capa donde van los pines */
+.mapa-interactivo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Icono del marcador */
+.pin {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-image: url('../multimedia/img/calavera.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -100%);
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  z-index: 2;
+}
+
+.pin:hover {
+  transform: translate(-50%, -110%) scale(1.2);
+  filter: drop-shadow(0 0 10px #ff0000);
+}
+
+/* Tooltip con nombre e imagen */
+.tooltip {
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px;
+  width: 140px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.tooltip img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.tooltip h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pin:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
 }
