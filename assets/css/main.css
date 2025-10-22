@@ -1009,7 +1009,7 @@ li a {
   z-index: 5;
    pointer-events: none;
 
-background-color: #0117403b;
+/* background-color: #01174015; */
 }
 .tunja{
   position: absolute;

@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const video = document.getElementById("video-bienvenida");
 
         if (video) {
+          video.currentTime = 0; // Reinicia el video
           video.play().catch(error => {
             console.warn("⚠️ No se pudo reproducir el video automáticamente:", error);
           });
@@ -72,6 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
     }, 1000); // <- Espera 1 segundos después de ocultar linterna
-  }, 5000); // <- Primeros 5 segundos de animación
+  }, 3000); // <- Primeros 5 segundos de animación
 });
 
