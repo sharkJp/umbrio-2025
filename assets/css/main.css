@@ -928,8 +928,9 @@ left: -1% !important;
 .cards-secc3:hover .segunda-img-secc3,
 .cards-secc3.active-secc3 .segunda-img-secc3 {
   opacity: 1;
-  transform: translateY(-20%) translateZ(80px) scale(1.15);
+  transform: translateY(-5%) translateZ(80px) scale(1.15);
   pointer-events: auto; /*aqui*/
+
 }
 
 /* ocultar scrollbar cuando se usa scroll en fallback */
