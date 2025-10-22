@@ -396,6 +396,7 @@
     width: 80% !important;
     height: 80%;
     top: 3%;
+    cursor: none;
   }
   .swiper-slide {
     top: 5%;
@@ -407,9 +408,11 @@
     width: 60px !important;
     height: 60px !important;
     border-radius: 50%;
+    cursor: none !important;
   }
  .swiper-button-next:hover, .swiper-button-prev:hover {
     background-color:var(--octavo-color);
+    cursor: none !important;
   }
 
   .seccion6 {

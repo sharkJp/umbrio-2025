@@ -65,7 +65,7 @@ body {
   width: 90px;    
   height: auto;
   pointer-events: none;
-  transform: translate(-97%, -10%);
+  transform: translate(-80%, -10%);
   z-index: 1000;
   cursor: none !important;
 
@@ -989,7 +989,7 @@ left: -1% !important;
 }
 
 .modal-contenido-secc3 {
-  background:#fabc4965; 
+  background:none; 
   padding: 20px;
   border-radius: 10px;
   width: 80%;
@@ -1006,12 +1006,15 @@ left: -1% !important;
 
 .cerrar-secc3 {
   position: absolute;
-  top: 15px !important;
-  right: -20px;
+  top: -2% !important;
+  right: -40px;
   font-size: 48px;
   font-weight: bold;
   cursor: pointer;
   color: red;
+  z-index: 10;     
+  transition: color 0.3s ease;
+
 }
 /*fin seccion 3*/
 /*footer*/
@@ -1139,6 +1142,7 @@ left: -1% !important;
 /* Contenedor del mapa interactivo tunja ......................................................................... */
 .mapa-interactivo {
   position: absolute;
+  background-color: #01174054;
   top: 0;
   left: 0;
   width: 100%;
@@ -1161,16 +1165,19 @@ left: -1% !important;
 
 .pin:hover {
   transform: translate(-50%, -110%) scale(1.2);
-  filter: drop-shadow(0 0 10px #ff0000);
+  filter: drop-shadow(0 0 5px #2e2a26);
 }
 
 /* Mini ventana (tooltip) */
-.tooltip {
+.tooltip{
+  background-color: #30163d;
+}
+/* .tooltip {
   position: absolute;
   bottom: 130%;
   left: 50%;
   transform: translateX(-50%) scale(0);
-  background: rgba(0, 0, 0, 0.8);
+  background:var(--tercer-color);
   color: #fff;
   border-radius: 10px;
   text-align: center;
@@ -1180,16 +1187,17 @@ left: -1% !important;
   pointer-events: none;
   transition: all 0.3s ease;
   z-index: 3;
-}
+} */
 
 /* Imagen dentro del tooltip */
-.tooltip img {
+/* .tooltip img {
   width: 100%;
   height: 80px;
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 5px;
-}
+  text-align: center;
+} */
 
 /* Título dentro del tooltip */
 .tooltip h4 {
@@ -1204,16 +1212,7 @@ left: -1% !important;
   transform: translateX(-50%) scale(1);
 }
 
-.cerrar-secc3 {
-  position: absolute;
-  top: 25px;    
-  right: 15px;     
-  font-size: 60px; 
-  color: var(--filtro-naranja); 
-  cursor: pointer;
-  z-index: 10;     
-  transition: color 0.3s ease;
-}
+
 
 .cerrar-secc3:hover {
   color: var(--segundo-color);
@@ -1225,7 +1224,7 @@ left: -1% !important;
   width: 100%;
   height: auto;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 3px;
 }
 
 /* Imagen del mapa */
@@ -1234,7 +1233,6 @@ left: -1% !important;
   height: auto;
   display: block;
   object-fit: cover;
-  border-radius: 8px;
 }
 
 /* Capa donde van los pines */
@@ -1262,19 +1260,21 @@ left: -1% !important;
 
 .pin:hover {
   transform: translate(-50%, -110%) scale(1.2);
-  filter: drop-shadow(0 0 10px #ff0000);
+  filter: drop-shadow(0 0 5px var(--filtro-azul));
 }
 
 /* Tooltip con nombre e imagen */
 .tooltip {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: 130%;
   left: 50%;
   transform: translateX(-50%) scale(0);
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--footer-color);
   color: #fff;
-  border-radius: 10px;
-  text-align: center;
+  border-radius: 5px;
   padding: 8px;
   width: 140px;
   opacity: 0;
@@ -1285,13 +1285,19 @@ left: -1% !important;
 
 .tooltip img {
   width: 100%;
-  height: 80px;
+  height: auto;
   object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 5px;
+ 
 }
+#tooltip-cojines{
+  position:relative;
+  left: 310%;
+}
+.cojines{
 
+}
 .tooltip h4 {
+  text-align: center;
   margin: 0;
   font-size: 13px;
   font-weight: 600;
